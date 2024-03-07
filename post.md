@@ -1,11 +1,18 @@
-# Lab X: Doing stuff with hardware!
+# Lab 5: Finite State Machine Design
 
-Please write a blog post describing your lab here.
+## What We Did In The Last Lab
 
-This is just an example of how you might structure your blog post, feel free to edit as you wish. For example, you might divide the lab into different sections each with their own intro, instructions, results, and takeaways. Please see the rubric for details on how the post will be evaluated.
+In our previous lab, we delved into the integration of microcontrollers, sensors, and actuators, expanding our understanding of digital circuitry. We explored components like the buzzer and ultrasonic sensor, mastering techniques to control them using Arduino microcontrollers. Through practical experiments, we learned to modulate sound intensity with the buzzer and accurately measure distances with the ultrasonic sensor. Finally, we applied this knowledge to a design challenge, creating a handheld distance detector. This lab emphasized the practical application of engineering principles in real-world scenarios. For more information regarding Lab 4's contents, please refer to this [URL](https://github.com/mlcourses/lab-4-blog-post-Giabao252/blob/main/post.md).
 
 ## Overview and Motivation
-This week we'll explore...
+
+This lab introduces the details of Finite State Machine (FSM) design, a fundamental concept in computer systems. The lab's primary objective is to construct a circuit capable of determining whether a binary number is divisible by three. This task involves simulating a sequential system that processes incoming binary digits one at a time and analyzes their collective value to ascertain divisibility. Through this exercise, we will gain valuable insights into FSMs, learning how to map out state transitions into state tables and implement combinational logic to drive the system's behavior. By engaging in this hands-on exploration, we will deepen our understanding of sequential circuits and enhance our problem-solving skills in digital design.
+
+## Lab Objectives
+
+1. Design a Finite State Machine (DFA - Deterministic Finite Automata) using a state transition diagram that checks if a binary string is divisible by 3.
+
+2. 
 
 ## Materials
 
