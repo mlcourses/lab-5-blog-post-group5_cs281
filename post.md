@@ -12,7 +12,17 @@ This lab introduces the details of Finite State Machine (FSM) design, a fundamen
 
 1. Design a Finite State Machine (DFA - Deterministic Finite Automata) using a state transition diagram that checks if a binary string is divisible by 3.
 
-2. 
+2. Determine the number of JK Flip Flops needed for the amount of states our FSM has.
+
+3. Design the logic for the two combinational circuits needed in our FSM design 
+
+<img src="./assets/fsm.png" />
+
+4. Create a Boolean Truth Table diagram and use K-Maps for each output values to determine the boolean expressions needed for our combinational circuits. 
+
+5. Build and Test the circuit in logisim
+
+6. Build the circuit on the PB-503 breadboard
 
 ## Materials
 
