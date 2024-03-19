@@ -53,7 +53,9 @@ This lab introduces the details of Finite State Machine (FSM) design, a fundamen
 
 ### Understanding the JK Flip Flop
 
+A JK flip-flop is a fundamental component in digital circuits, acting as a memory unit. It stores binary information, representing either a 0 or a 1. Think of it like a light switch: pressing one button turns the light on, representing a 1, while pressing the other turns it off, representing a 0. If both buttons are pressed together, the flip-flop toggles – switching from its current state to the opposite one. This functionality enables sequential logic in computer systems, essential for tasks like storing data or controlling the flow of information.
 
+<img src="./assets/jkff.png" /> 
 
 ### Designing a DFA For The Finite State Machine
 
@@ -66,6 +68,7 @@ This lab introduces the details of Finite State Machine (FSM) design, a fundamen
 <img src="./assets/dfa.png" /> 
 
 - Our DFA has three states in total, so we would need 2 JK Flip Flops to be able to represent all three states. This is because if we use 1 flip flop , we could only represent 2 states. 
+
 
 ## Testing
 
