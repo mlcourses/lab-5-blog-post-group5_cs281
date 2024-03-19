@@ -22,11 +22,36 @@ This lab introduces the details of Finite State Machine (FSM) design, a fundamen
 
 5. Build and Test the circuit in logisim
 
-6. Build the circuit on the PB-503 breadboard
+6. Build the circuit on the PB-503 breadboard with a JK Flip Flop IC and the other logic gates that we already used.
 
 ## Materials
 
+- PB-503 breadboard prototyping station
+
+- 7404 NOT gate IC
+
+- 7408 AND gate IC
+
+- 7486 XOR gate IC
+
+- 7476 JK Flip Flop IC
+
+- IC data sheets
+
+- Wires and connection tools
+
+- Logic Probes
+
+- Logic Switches
+
+- Push Button
+
+- Resistors 
+
+
 ## Project Steps
+
+
 
 ## Testing
 
