@@ -10,7 +10,7 @@ This lab introduces the details of Finite State Machine (FSM) design, a fundamen
 
 ## Lab Objectives
 
-1. Design a Finite State Machine (DFA - Deterministic Finite Automata) using a state transition diagram that checks if a binary string is divisible by 3.
+1. Design a Finite State Machine (DFA - Deterministic Finite Automata) using a state transition diagram that allows us to construct different binary strings which are divisible by 3.
 
 2. Determine the number of JK Flip Flops needed for the amount of states our FSM has.
 
@@ -51,7 +51,21 @@ This lab introduces the details of Finite State Machine (FSM) design, a fundamen
 
 ## Project Steps
 
+### Understanding the JK Flip Flop
 
+
+
+### Designing a DFA For The Finite State Machine
+
+- A DFA, or Deterministic Finite Automaton, is like a machine with specific states it can be in. It moves from one state to another based on inputs it receives. Each transition is determined by a clear set of rules, making its behavior predictable and precise. It's a fundamental concept used in computer science to model and solve various problems efficiently.
+
+- For this step, we have to design a DFA that allows us to construct different binary strings which are divisible by 3. Since we are dealing with binary strings, our inputs that determines the state are only 0s and 1s. Each state must have an instruction for both inputs, otherwise it will not be deterministic. 
+
+- Below is the DFA that we have constructed:
+
+<img src="./assets/dfa.png" /> 
+
+- Our DFA has three states in total, so we would need 2 JK Flip Flops to be able to represent all three states. This is because if we use 1 flip flop , we could only represent 2 states. 
 
 ## Testing
 
