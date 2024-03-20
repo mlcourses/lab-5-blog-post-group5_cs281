@@ -89,9 +89,39 @@ This lab introduces the details of Finite State Machine (FSM) design, a fundamen
 
 <img src="./assets/function_table.png" /> 
 
+- Our first column indicates our states which matches up with our DFA. We have the states S0, S1, S2 and a "don't care" state (because our DFA only needs 3 states). Next, we look at the current states of the two JK flip flops (denoted as Q0 and Q1) to determine the outputs. State S0 will be reached when Q0 and Q1 are both 0, S1 is when Q0 is 1 and Q1 is 0, S2 is when Q0 is 0 and Q1 is 1 and our don't care state is when both Q0 and Q1 is 1. These will then be evaluted with the input being put into the flip flop, which can be either 0 or 1 (represented by x) and future states as well as the result of the flipflop is determined in "Next State" and "F" columns.
+
+### Drawing Kmaps
+
+- After writing out our function table, we will draw out Kmaps for each J0, J1, K0 and K1 to see when each J and K will be true. This will help us design a wiring diagram later because we will be able to see when J0, K0, J1 and K1 will be true. We have the following Kmaps:
+
+ <img width="702" alt="kmap" src="https://github.com/mlcourses/lab-5-blog-post-group5_cs281/assets/67582698/b6c1a9a1-6fb8-461c-968f-b4c7619061ab">
+
+- We then use this to construct our wiring diagram. Our wiring diagram looked like this:
+
+<img width="723" alt="wiring diagram" src="https://github.com/mlcourses/lab-5-blog-post-group5_cs281/assets/67582698/38706e61-f5ab-4d8c-b7cb-d257fe0b63c6">
+
+- The wiring diagram takes the inputs into each state (J0, K0, J1 and K1) shown in the Kmaps above and then wires them before putting them into the JK flipflop. For example, if we look at the gate 2J on the JK flipflop (which is J0), we can trace it back to the 7432 XOR chip, of which it is the output of Q1 (1A is connected to 1Q of the JK flipflop which is Q1) and x. We get the wiring diagram by filling out this connection process.
+
 ## Testing
 
+- After we have our wiring diagram, we assembled the circuit. This is what our final circuit board looks like:
+  
+![IMG_8032](https://github.com/mlcourses/lab-5-blog-post-group5_cs281/assets/67582698/cdd9aafe-1c90-471f-a26a-904cc7aa012a)
+
+- This matches our wiring diagram drawn above, though the wiring for the clock is a little different. For the clock, we used the button on our breadboard and connected it according to this diagram:
+
+#### Clock diagram
+
+We had to connect the clock to a resistor and the resistor to a +5V source, which provided it power. We then connected the clock to the JK-flip flop itself to tell it when to update. The green wire on the breadboard is connecting the clock to the JK flipflop, while the purple wire connects it to the high-low indicators to make it easier to check our clock.
+
+- Below is a video that demonstrates how our circuit works. There is audio in the video that describes how the circuit function and the different intermdiary state changes that culminates in the final result.
+
+#### Testing Video
+
 ## Conclusion
+
+In conclusion, this lab helped us understand the process of using sequential circuits in our larger circuit. We used the JK flip flop and becaue the output of the flip flop depended on what state the flip flop was in before, we had to draw out DFA diagrams and then Kmap the different JK inputs. The main takeaway for this lab is the use of the JK flip flop and how to plan out the correct wiring for a sequential circuit to ensure that the states carry over correctly and the circuit works as intended. Another takeaway would be the wiring of a clock to our circuit and to the JK flipflop so we could update it whenevr we wanted to and see its effects on each state and final result.
 
 
 
