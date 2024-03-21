@@ -119,6 +119,8 @@ We had to connect the clock to a resistor and the resistor to a +5V source, whic
 
 #### Testing Video
 
+https://github.com/mlcourses/lab-5-blog-post-group5_cs281/assets/87928752/08d50831-8f3e-4402-b80d-20904c6b710c
+
 ## Conclusion
 
 In conclusion, this lab helped us understand the process of using sequential circuits in our larger circuit. We used the JK flip flop and becaue the output of the flip flop depended on what state the flip flop was in before, we had to draw out DFA diagrams and then Kmap the different JK inputs. The main takeaway for this lab is the use of the JK flip flop and how to plan out the correct wiring for a sequential circuit to ensure that the states carry over correctly and the circuit works as intended. Another takeaway would be the wiring of a clock to our circuit and to the JK flipflop so we could update it whenevr we wanted to and see its effects on each state and final result.
